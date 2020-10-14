@@ -323,14 +323,6 @@ body {
     display: flex;
 }
 
-.dp-fb {
-    display: flexbox;
-}
-
-.dp-fr {
-    display: flow-root;
-}
-
 .dp-g {
     display: grid;
 }
@@ -345,10 +337,6 @@ body {
 
 .dp-if {
     display: inline-flex;
-}
-
-.dp-ifb {
-    display: inline-flexbox;
 }
 
 .dp-it {
@@ -389,8 +377,4 @@ body {
 
 .position-r {
     position: relative;
-}
-
-.position-s {
-    position: sticky;
 }

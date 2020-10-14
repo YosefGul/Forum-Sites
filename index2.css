@@ -1,16 +1,16 @@
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main {
     width        : 80%;
     height       : auto;
-    border       : 0.1rem solid grey;
+    border       : 0.1rem solid #E5E5E5;
     border-radius: 1rem;
     margin       : auto;
-    margin-top   : 10rem;
+    margin-top   : 5rem;
     display      : grid;
-    padding      : 0rem 0rem 8rem 0rem;
+    padding      : 3rem 6rem 12rem 6rem;
 }
 
 .forum {
@@ -20,7 +20,7 @@
     margin     : auto;
     font-size  : 2.6rem;
     font-weight: 600;
-    color      : rgb(109, 109, 109);
+    color      : #707070;
 }
 
 .forum-two {
@@ -30,7 +30,7 @@
     padding    : 0.5rem;
     font-size  : 1.8rem;
     font-weight: 400;
-    color      : grey;
+    color      : #707070;
 }
 
 .options {
@@ -39,83 +39,129 @@
     border       : 0.1rem solid black transparent;
     margin       : auto;
     display      : flex;
-    margin-bottom: 4rem;
-    margin-top   : 1rem;
+    margin-bottom: 2rem;
+    margin-top   : 3rem;
 }
 
 .slct-group {
     padding    : 0.5rem;
     display    : block;
     margin-left: 1rem;
-    font-size  : 1.6rem;
-    color      : grey;
+    font-size  : 1.4rem;
+    border-color: rgb(211, 211, 211);
+    border-style: solid;
+    border-width: 1px;
+    color      : rgb(189, 189, 189);
+    border-radius: 5px;
 }
 
 .article {
-    width  : 98%;
-    height : 7rem;
-    border : 0.1rem solid black transparent;
-    margin : auto;
-    display: flex;
+    width          : 98%;
+    height         : auto;
+    border         : 0.1rem solid black transparent;
+    margin         : auto;
+    display        : flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 }
 
 .left-a {
-    width          : 48%;
-    height         : 100%;
-    border         : 0.1rem solid transparent;
-    position       : relative;
-    justify-content: space-between;
-    text-align     : left;
-    margin         : auto;
+    width : 50%;
+    height: 100%;
+    border: 0.1rem solid transparent;
 }
 
 .right-a {
-    width  : 48%;
-    height : 100%;
-    border : 0.1rem solid transparent;
-    display: flex;
-    margin : auto;
+    width          : 30%;
+    height         : auto;
+    border         : 0.1rem solid transparent;
+    display        : flex;
+    justify-content: space-around;
 }
 
-
+.right-a-two {
+    width  : 60%;
+    height : 100%;
+    display: flex;
+    border : 1px solid black transparent;
+}
 
 .art-txt-one {
-    width    : 100%;
+    width    : max-content;
     font-size: 1.5rem;
-    color    : grey;
+    color    : #505050;
     border   : 0.1rem solid transparent;
+    margin-bottom: 0.5rem;
     padding  : 0rem 1rem;
     font-size: 1.7rem;
 }
 
-.art-txt-two {
-    width    : 100%;
+.art-two-txt {
+    height   : max-content;
+    padding  : 0rem 1rem;
     font-size: 1.4rem;
-    border   : 0.1rem solid transparent;
     color    : grey;
-    position : absolute;
-    bottom   : 0;
-    padding  : 0rem 3rem;
-    font-size: 1.6rem;
+    margin   : auto;
+    border   : 1px solid black transparent;
+    display: flex;
 }
 
-.art-txt-two span {
-    color      : rgb(201, 137, 19);
+.img-a-t-tx {
+    display: block;
+    width: max-content;
+    height: max-content;
+    margin-top: 0.4rem;
+    margin-right: 0.3rem;
+}
+
+.art-two-txt-right {
+    width    : max-content;
+    height   : 100%;
+    padding  : 0rem 1rem;
+    font-size: 1.4rem;
+    color    : grey;
+    border   : 1px solid transparent;
+    display  : flex;
+}
+
+.art-t-tx-r-div {
+    width : max-content;
+    height: max-content;
+    margin: auto;
+    color: #1592E6;
     font-weight: 600;
 }
 
-.art-two-txt {
-    font-size: 1.5rem;
+.art-txt-two {
+    width    : max-content;
+    padding  : 0rem 1rem 0rem 1rem;
+    border   : 0.1rem solid transparent;
     color    : grey;
-    margin   : auto;
+    font-size: 1.5rem;
+    display  : flex;
 }
 
-hr {
+.art-img {
+    border      : 1px solid black transparent;
+    display     : block;
+    margin      : auto;
+    margin-right: 0.8rem;
+}
+
+.art-txt-two span {
+    font-weight: 550;
+    color      : #C16B3F;
+}
+
+hr.hr-f{
     width  : 98%;
-    height : 0;
-    color  : grey;
-    opacity: 0.5;
+    border: 1px solid #E5E5E5;
     margin : auto;
+}
+
+input::placeholder{
+    color: rgb(185, 185, 185);
+    font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -140,18 +186,14 @@ hr {
         border : 0.1rem solid transparent;
         display: flex;
     }
-
-    .a-t-t-m {
-        margin-left: 10%;
-    }
-
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
 
     .main {
         width : 100%;
         border: none;
+        padding: 1rem 2rem 5rem 2rem;
     }
 
     .options {
@@ -183,14 +225,51 @@ hr {
         display: flex;
     }
 
+    .right-a-two {
+        width: 50%;
+        border: 1px solid transparent;
+        position: relative;
+        margin-left: 6rem;
+    }
+
     .art-two-txt {
         font-size: 1.5rem;
-        color    : grey;
         margin   : auto;
     }
 
     .a-t-t-m {
         margin-left: 30%;
+    }
+
+    
+}
+
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 9px;
+    }
+
+    .art-two-txt {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 370px){
+    html {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    html {
+        font-size: 6px;
     }
 }
 
@@ -206,17 +285,18 @@ hr {
     }
 }
 
+
 /* All Problems */
 
 #all-problems {
-    width     : 90%;
-    height    : 40rem;
-    border    : 0.1rem solid grey;
+    width        : 90%;
+    height       : 40rem;
+    border       : 0.1rem solid grey;
     border-radius: 10px;
-    margin    : auto;
-    margin-top: 5rem;
-    display   : grid;
-    padding: 0rem 0rem 8rem 0rem;
+    margin       : auto;
+    margin-top   : 5rem;
+    display      : grid;
+    padding      : 0rem 0rem 8rem 0rem;
 }
 
 .a-top {
@@ -262,7 +342,7 @@ hr {
 }
 
 .a-search {
-    width: 30%;
+    width        : 30%;
     padding      : 0.7rem 2rem;
     border       : 0.1rem solid grey;
     margin-left  : 1rem;
@@ -270,40 +350,40 @@ hr {
 }
 
 .p-div {
-    width: 90%;
-    height: 7rem;
-    border: 1px solid black transparent;
-    margin: auto;
+    width  : 90%;
+    height : 7rem;
+    border : 1px solid black transparent;
+    margin : auto;
     display: flex;
 }
 
 .p-one-div {
-    width: 60%;
-    height: 100%;
-    border: 1px solid transparent;
+    width  : 60%;
+    height : 100%;
+    border : 1px solid transparent;
     display: flex;
 }
 
 .p-img {
-    width: 5rem;
-    height: 5rem;
-    border: 1px solid black transparent;
+    width  : 5rem;
+    height : 5rem;
+    border : 1px solid black transparent;
     display: block;
-    margin: auto;
+    margin : auto;
 }
 
 .p-txt-div {
-    width: 90%;
-    height: 100%;
-    border: 1px solid black transparent;
+    width  : 90%;
+    height : 100%;
+    border : 1px solid black transparent;
     display: grid;
 }
 
 .p-txt-one {
-    width: 100%;
+    width  : 100%;
     padding: 0.2rem 0 0 1rem;
-    border: 1px solid black transparent;
-    margin: auto;
+    border : 1px solid black transparent;
+    margin : auto;
 }
 
 .p-txt-one p {
@@ -311,45 +391,45 @@ hr {
 }
 
 .p-txt-two {
-    width: 100%;
-    padding: 0.2rem 0 0 1rem;
+    width    : 100%;
+    padding  : 0.2rem 0 0 1rem;
     font-size: 1.4rem;
-    border: 1px solid black transparent;
-    margin: auto;
+    border   : 1px solid black transparent;
+    margin   : auto;
 }
 
 .p-txt-two span {
-    color: rgb(235, 152, 0);
+    color      : rgb(235, 152, 0);
     font-weight: 600;
 }
 
 .p-o-div {
-    width: 40%;
-    height: 100%;
-    margin: auto;
-    border: 1px solid black transparent;
+    width  : 40%;
+    height : 100%;
+    margin : auto;
+    border : 1px solid black transparent;
     display: flex;
 }
 
 .g-p-div {
-    width: max-content;
-    height: max-content;
-    border: 1px solid black transparent;
-    padding: 0.4rem 1rem;
-    font-size: 1.1rem;
-    border-radius: 1rem;
+    width           : max-content;
+    height          : max-content;
+    border          : 1px solid black transparent;
+    padding         : 0.4rem 1rem;
+    font-size       : 1.1rem;
+    border-radius   : 1rem;
     background-color: #1592E6;
-    color: white;
-    margin: auto;
-    display: block;
-    text-decoration: none;
+    color           : white;
+    margin          : auto;
+    display         : block;
+    text-decoration : none;
 }
 
 .g-p-div-two {
-    font-size: 1.4rem;
+    font-size  : 1.4rem;
     margin-left: 1rem;
-    margin-top: 0.5rem;
-    margin: auto;
+    margin-top : 0.5rem;
+    margin     : auto;
 }
 
 .p-hr {
@@ -357,13 +437,13 @@ hr {
 }
 
 .p-txt-one span {
-    display: none;
+    display  : none;
     font-size: 1.5rem;
 }
 
 @media screen and (max-width: 880px) {
     #all-problems {
-        width: 100%;
+        width : 100%;
         border: none;
     }
 }
@@ -374,11 +454,12 @@ hr {
     }
 
     .p-div {
-        height: 14rem;
+        height : 14rem;
         display: grid;
     }
 
-    .p-one-div, .p-o-div {
+    .p-one-div,
+    .p-o-div {
         width: 100%;
     }
 
@@ -386,14 +467,14 @@ hr {
         margin-left: 30%;
     }
 
-    .p-txt-one p{
+    .p-txt-one p {
         display: none;
     }
 
-    .p-txt-one span{
+    .p-txt-one span {
         display: block;
     }
-    
+
 }
 
 
@@ -401,7 +482,7 @@ hr {
     .new-d {
         font-size: 1.4rem;
     }
-    
+
     .a-search {
         width: 60%;
     }
@@ -417,9 +498,9 @@ hr {
         font-size: 1.4rem;
     }
 
-    .p-txt-one span{
+    .p-txt-one span {
         font-size: 1.4rem;
-        display: block;
+        display  : block;
     }
-    
+
 }
